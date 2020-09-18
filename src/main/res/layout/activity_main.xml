@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:fitsSystemWindows="true"
+    android:padding="2dp">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:spinnerMode="dropdown"/>
+
+            <Button
+                android:id="@+id/englan"
+                android:layout_margin="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                android:background="@drawable/englet"
+                />
+            <Button
+                android:id="@+id/tamlan"
+                android:layout_margin="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                android:background="@drawable/tamillet"
+                />
+            <Button
+                android:id="@+id/hindlan"
+                android:layout_margin="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                android:background="@drawable/hindilet"/>
+
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="WebViewLayout">
+
+                <TextView
+                    android:id="@+id/city_field1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_map" />
+
+                <TextView
+                    android:id="@+id/city_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="city_field"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/button"
+                    android:text="show in map"
+                    android:textColor="#FFF"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/layout"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/updated_field1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="8sp"
+                        android:layout_margin="10dp"
+                        android:text="Time updation" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_time_passing_"/>
+
+                    <TextView
+                        android:id="@+id/updated_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="updated_field"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textStyle="normal"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/layout"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    tools:ignore="WebViewLayout">
+
+
+                    <TextView
+                        android:id="@+id/weather_icon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:text="Weather"
+                        android:background="#fff"
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_mountains"/>
+
+                    <Button
+                        android:id="@+id/weather_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="wic"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/layout"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    tools:ignore="WebViewLayout">
+
+                    <TextView
+                        android:id="@+id/current_temperature_field1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:text="TEMPERATURE"
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_thermometer"/>
+
+                    <TextView
+                        android:id="@+id/current_temperature_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ctemp"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textStyle="normal"
+                        android:textColor="#000"
+                        android:textSize="15sp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/layout"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    tools:ignore="WebViewLayout">
+
+
+                    <TextView
+                        android:id="@+id/details_field1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:text="weather detilas"
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_forecast"/>
+
+                    <TextView
+                        android:id="@+id/details_field"
+                        android:layout_width="wrap_content"
+                        android:text="details_field"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textStyle="normal"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/layout"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    tools:ignore="WebViewLayout">
+
+                    <TextView
+                        android:id="@+id/humidity_field1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:text=" Humidity "
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_humidity"/>
+
+
+                    <TextView
+                        android:id="@+id/humidity_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="humidity_field"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textStyle="normal"
+                        android:textColor="#000"
+                        android:textSize="15sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/layout"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    tools:ignore="WebViewLayout">
+
+                    <TextView
+                        android:id="@+id/pressure_field1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:text=" Pressure "
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_gauge"/>
+
+                    <TextView
+                        android:id="@+id/pressure_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pressure_field"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textStyle="normal"
+                        android:textColor="#000"
+                        android:textSize="15sp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/layout"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    tools:ignore="WebViewLayout">
+
+                    <TextView
+                        android:id="@+id/season1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:text=" Season "
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_autumn"/>
+
+
+                    <TextView
+                        android:id="@+id/season"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="season_feild"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/layout"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    tools:ignore="WebViewLayout">
+
+                    <TextView
+                        android:id="@+id/crop1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:text=" Suitable Crops "
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_plant"/>
+
+
+                    <Button
+                        android:id="@+id/crop"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/button"
+                        android:padding="5dp"
+                        android:text="suggested crops"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/layout"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    tools:ignore="WebViewLayout">
+
+                    <TextView
+                        android:id="@+id/soil1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:text=" Soli present "
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_shovel"/>
+
+                    <TextView
+                        android:id="@+id/soil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="season_feild"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/cropd"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <com.github.chrisbanes.photoview.PhotoView
+                    android:id="@+id/paddy"
+                    android:layout_width="320dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/rice"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFF" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/layout"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        tools:ignore="WebViewLayout">
+
+                        <TextView
+                            android:id="@+id/gperiod1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Growth period "
+                            android:textColor="#000"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_analytics"/>
+
+                        <TextView
+                            android:id="@+id/gperiod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Growth_feild"
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/layout"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        tools:ignore="WebViewLayout">
+
+                        <TextView
+                            android:id="@+id/mprice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price "
+                            android:textColor="#000"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_rupee_indian"/>
+
+
+                        <TextView
+                            android:id="@+id/mprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Price_feild"
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/layout"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="WebViewLayout">
+
+                        <TextView
+                            android:id="@+id/fertilizer1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  fertilizers "
+                            android:textColor="#000"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_fertilizer" />
+
+                        <TextView
+                            android:id="@+id/fertilizer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="ferti_feild"
+                            android:textColor="#000"
+                            android:textSize="10sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/layout"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="WebViewLayout">
+
+                        <TextView
+                            android:id="@+id/pest1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  pesticides "
+                            android:textColor="#000"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_pesticide" />
+
+                        <TextView
+                            android:id="@+id/pest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Pest_feild"
+                            android:textColor="#000"
+                            android:textSize="10sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edittext"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="WebViewLayout">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="4dp"
+                                android:src="@drawable/ic_rupee" />
+
+                            <TextView
+                                android:id="@+id/pestcost1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  pesticides cost "
+                                android:textColor="#000"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/tacre1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="Enter Area of cultivation"
+                            android:textColor="#000"
+                            android:textSize="8sp"
+                            android:textStyle="normal" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+
+                            <EditText
+                                android:id="@+id/tacre"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:hint="in acre's"
+                                android:inputType="number"
+                                android:text="1"
+                                android:background="@drawable/ic_underline"
+                                android:textAlignment="center"
+                                android:textColor="#000"
+                                android:textSize="12sp"
+                                tools:text="1" />
+
+                            <Button
+                                android:id="@+id/pestcal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/button"
+                                android:padding="5dp"
+                                android:text="Calculate"
+                                android:textColor="#FFF"
+                                android:textSize="15sp" />
+
+
+                            <TextView
+                                android:id="@+id/pestcost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="acre"
+                                android:textColor="#000"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edittext"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="WebViewLayout">
+
+                        <TextView
+                            android:id="@+id/wneeds1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Water needs "
+                            android:textColor="#000"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_tap" />
+
+                        <TextView
+                            android:id="@+id/wneeds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="water_need_feild"
+                            android:textColor="#000"
+                            android:textSize="10sp"
+                            android:textStyle="normal" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edittext"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="WebViewLayout">
+
+
+                        <TextView
+                            android:id="@+id/timer1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Timelimit "
+                            android:textColor="#000"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_time_passing_" />
+
+
+                        <TextView
+                            android:id="@+id/text_view_countdown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="00:00 "
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/button_start_pause"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/ic_power_button_outline"
+                                android:textColor="#fff" />
+
+                            <Button
+                                android:id="@+id/button_reset"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="20dp"
+                                android:background="@drawable/ic_power_button_off"
+                                android:textColor="#fff"
+                                android:visibility="visible" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/layout"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="WebViewLayout">
+
+
+                    <TextView
+                        android:id="@+id/dams1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nearest dams "
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_sea_dyke" />
+
+
+                    <TextView
+                        android:id="@+id/dams"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="dams_feild"
+                        android:textColor="#000"
+                        android:textSize="8sp"
+                        android:textStyle="normal|bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/layout"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    tools:ignore="WebViewLayout">
+
+                    <TextView
+                        android:id="@+id/helpno1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Helpline"
+                        android:textColor="#000"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/call"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/ic_phone" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/helpno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="help_feild"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
